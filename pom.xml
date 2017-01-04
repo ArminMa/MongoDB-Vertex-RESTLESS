@@ -63,6 +63,7 @@
 
   <build>
     <!-- Need to enable the filtering of the src/test/resources to inject the random port -->
+    <finalName>mongoService</finalName>
     <testResources>
       <testResource>
         <directory>src/test/resources</directory>
@@ -194,7 +195,7 @@
                 </transformer>
               </transformers>
               <artifactSet/>
-              <outputFile>${project.build.directory}/${project.artifactId}-${project.version}-fat.jar</outputFile>
+              <outputFile>target/MongoServiceFat.jar</outputFile>
             </configuration>
           </execution>
         </executions>

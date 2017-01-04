@@ -20,14 +20,14 @@ public class UserPojo {
     }
 
     public UserPojo(JsonObject json) {
-        this.userName = json.getString("userName");
+        this.userName = json.getString("username");
         this.password = json.getString("password");
         this.email = json.getString("email");
     }
 
     public JsonObject toJson() {
         JsonObject json = new JsonObject()
-                .put("userName", userName)
+                .put("username", userName)
                 .put("password", password)
                 .put("email", email);
         return json;
