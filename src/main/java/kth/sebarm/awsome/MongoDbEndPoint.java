@@ -43,7 +43,7 @@ public class MongoDbEndPoint extends AbstractVerticle{
             if(handler.succeeded()){
                 logger.info("user successfully saved in database");
                 routingContext.response().setStatusCode(201);
-                routingContext.response().end("success");
+                routingContext.response().end();
             } else {
                 logger.error("user not saved in database");
                 routingContext.response().setStatusCode(400);
